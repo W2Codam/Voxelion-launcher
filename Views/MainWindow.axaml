@@ -3,10 +3,12 @@
         xmlns:vm="using:Voxelion.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
         x:Class="Voxelion.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
+		Width="600"
+		Height="450"
         Title="Voxelion">
 
     <Design.DataContext>
@@ -15,6 +17,25 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<Menu Background="White" Foreground="Black" FontSize="16" VerticalAlignment="Top">
+		<MenuItem Header="File">
+			<MenuItem Header="Open" />
+			<MenuItem Header="Save" />
+			<MenuItem Header="Save As" />
+		</MenuItem>
+		<MenuItem Header="Edit">
+			<MenuItem Header="Undo" />
+			<MenuItem Header="Redo" />
+			<MenuItem Header="Cut" />
+			<MenuItem Header="Copy" />
+			<MenuItem Header="Paste" />
+		</MenuItem>
+		<MenuItem Header="Help">
+			<MenuItem Header="Feedback" />
+			<MenuItem Header="Report bug" />
+		</MenuItem>
+	</Menu>
+
+    <!-- <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/> -->
 
 </Window>
