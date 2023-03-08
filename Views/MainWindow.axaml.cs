@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Voxelion;
+namespace Voxelion.Views;
 
 public partial class MainWindow : Window
 {

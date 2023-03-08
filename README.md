@@ -7,5 +7,5 @@ Client launcher for ft_minecraft written in C# with AvaloniaUI.
 ## Run
 
 ```bash
-dotnet run
+sh build.sh
 ```
